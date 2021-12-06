@@ -3,9 +3,10 @@ theme: unicorn
 background: https://source.unsplash.com/collection/94734566/1920x1080
 class: 'text-center'
 highlighter: shiki
-lineNumbers: false
+lineNumbers: true
 handle: 'metaory'
-gradientColors: ['#001CAF', '#5B21B6']
+website: 'github.com/metaory'
+# gradientColors: ['#001CAF', '#5B21B6']
 drawings:
   persist: false
 ---
@@ -40,15 +41,53 @@ logos: [
 ]
 ---
 
-# Hierarchy
-
-### Levels
 
 |                     |                                |
 | ---                 | ---                            |
 | <kbd>PREVENT</kbd>  | Linters, git Hooks, Unit tests |
 | <kbd>INSPECT</kbd>  | CLI, Browser, Editor           |
 | <kbd>IDENTIFY</kbd> | Sentry, Rollbar, TrackJs       |
+
+
+---
+layout: new-section
+sectionImage: 'https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/section-illustration.svg'
+---
+<h1>Prevent</h1>
+
+---
+layout: intro
+introImage: https://miro.medium.com/max/398/1*TPkhIqPgVzFSSpwdlVwhVw.png
+---
+# Use a Linter
+
+### Find and fix problems in your JavaScript code.
+
+---
+layout: intro
+introImage: https://miro.medium.com/max/1400/1*Rj3iVwEKZMiRhcEsjh45Kg.png
+# introImage: https://pbs.twimg.com/media/EbHalBQXYAE1XwD.jpg
+---
+
+# Use Unit tests
+
+### Type of testing which is done by software developers in which the smallest testable module of an application - like functions, procedures or interfaces - are tested to ascertain if they are fit to use.
+
+---
+layout: intro
+introImage: https://dev-to-uploads.s3.amazonaws.com/i/96jxo85imhaa25xhi44k.png
+---
+# Use Git hooks
+
+### Husky improves your commits and more!
+
+#### woof!
+
+---
+layout: new-section
+sectionImage: 'https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/section-illustration.svg'
+---
+# Inspect
 
 ---
 
@@ -136,17 +175,23 @@ ssh -N -L 9221:127.0.0.1:9229 -i KEYFILE SERVER-USER@SERVER-IP
 ssh -N -L 9221:localhost:9229 -i ~/.ssh/mykey.pem ec2-user@22.222.222.22
 ```
 
+
+---
+layout: new-section
+sectionImage: 'https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/section-illustration.svg'
+---
+# Identify
+
 ---
 
 # Exception Monitoring tools
 [stackshare.io/exception-monitoring](https://stackshare.io/exception-monitoring)
 
 <div grid="~ cols-3 gap-2" m="-t-2">
-  <img v-click border="rounded" width="260" src="https://vectorlogoseek.com/wp-content/uploads/2020/02/sentry-io-vector-logo.png">
   <img v-click border="rounded" width="260" src="https://mms.businesswire.com/media/20210216005484/en/859303/23/New_Rollbar_LOGO.jpg">
   <img v-click border="rounded" width="150" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/uq1w4cehiz1z09tdedjl">
+  <img v-click border="rounded" width="260" src="https://vectorlogoseek.com/wp-content/uploads/2020/02/sentry-io-vector-logo.png">
 </div>
-
 
 ---
 
@@ -154,10 +199,10 @@ ssh -N -L 9221:localhost:9229 -i ~/.ssh/mykey.pem ec2-user@22.222.222.22
 [stackshare.io/application-performance-monitoring](https://stackshare.io/stacks/application-performance-monitoring)
 
 <div grid="~ cols-4 gap-2" m="-t-2">
-  <img v-click border="rounded" width="260" src="https://vectorlogoseek.com/wp-content/uploads/2020/02/sentry-io-vector-logo.png">
   <img v-click border="rounded" width="260" src="https://img.favpng.com/3/22/15/new-relic-web-development-business-amazon-web-services-png-favpng-cayg8S5dWEsDCvectkcw4YxzH.jpg">
   <img  v-click border="rounded" width="150" src="https://ms-f7-sites-01-cdn.azureedge.net/docs/stories/1408635292023828373-dynatrace-other-azure-en-united-states/resources/6c48e916-5bc8-438d-b3b1-a952dc66cfe9/1408638336458751638_1408638336458751638">
   <img v-click border="rounded" width="200" src="https://dv-website.s3.amazonaws.com/uploads/2017/06/ns.png">
+  <img v-click border="rounded" width="260" src="https://vectorlogoseek.com/wp-content/uploads/2020/02/sentry-io-vector-logo.png">
 </div>
 
 ---
@@ -168,10 +213,14 @@ image: 'https://www.nodesource.com/assets/nsolid/hero-nsolid-home.png'
 
 ---
 layout: new-section
-sectionImage: '/section-illustration.svg'
+sectionImage: 'https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/section-illustration.svg'
 ---
-# [Self-Hosted Sentry](https://develop.sentry.dev/self-hosted/)
-# [Self-Hosted NSolid](https://docs.nodesource.com/nsolid)
+## [Self-Hosted Sentry](https://develop.sentry.dev/self-hosted/)
+
+<br>
+<br>
+
+## [Self-Hosted NSolid](https://docs.nodesource.com/nsolid)
 
 
 ---
@@ -180,4 +229,4 @@ website: 'github.com/metaory'
 class: text-center
 ---
 
-# <p>Thank You</p> 
+# Thank You

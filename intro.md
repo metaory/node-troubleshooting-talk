@@ -1,9 +1,11 @@
 ---
 layout: intro
-introImage: /logo.png
+handle: 'metaory'
+website: 'github.com/metaory'
+introImage: https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/logo.png
 ---
 
-# Metaory
+# github.com/metaory
 
 ## JS, Lua, Shell, Vim, Arch lover
 
