@@ -16,6 +16,23 @@ drawings:
 Tips and Tricks
 
 ---
+
+# Hi, there!
+
+<br>
+<br>
+
+- 😀 My name: **Pou Yan**
+- 🧠 I'm a: **Solution Architect**
+- ⛏  My hobby: **Hacking and Writing**
+- 🧒 Working for: **[HelloGold.com](https://hellogold.com)**
+
+<br>
+<br>
+
+Follow me on [Github](https://github.com/metaory) 👋
+
+---
 src: ./intro.md
 ---
 
