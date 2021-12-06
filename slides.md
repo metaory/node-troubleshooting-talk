@@ -25,7 +25,7 @@ Tips and Tricks
 - 😀 My name: **Pou Yan**
 - 🧠 I'm a: **Solution Architect**
 - ⛏  My hobby: **Hacking and Writing**
-- 🧒 Working for: **[HelloGold.com](https://hellogold.com)**
+- 🏢 Working for: **[HelloGold.com](https://hellogold.com)**
 
 <br>
 <br>
@@ -62,7 +62,7 @@ logos: [
 |                     |                                |
 | ---                 | ---                            |
 | <kbd>PREVENT</kbd>  | Linters, git Hooks, Unit tests |
-| <kbd>INSPECT</kbd>  | CLI, Browser, Editor           |
+| <kbd>INSPECT</kbd>  | Logs, CLI, Browser, Editor     |
 | <kbd>IDENTIFY</kbd> | Sentry, Rollbar, TrackJs       |
 
 
@@ -88,7 +88,7 @@ introImage: https://miro.medium.com/max/1400/1*Rj3iVwEKZMiRhcEsjh45Kg.png
 
 # Use Unit tests
 
-### Type of testing which is done by software developers in which the smallest testable module of an application - like functions, procedures or interfaces - are tested to ascertain if they are fit to use.
+### Tests can't fail if you don't run any
 
 ---
 layout: intro
@@ -106,6 +106,23 @@ sectionImage: 'https://raw.githubusercontent.com/metaory/node-troubleshooting-ta
 ---
 # Inspect
 
+---
+layout: intro
+introImage: https://png.pngtree.com/png-clipart/20190516/original/pngtree-log-file-document-icon-png-image_4180597.jpg
+---
+# Distributed Logging and Tracing
+
+### As systems grows bigger, the visibility gap grows.
+
+---
+
+# console.table
+[console.table() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/console/table)
+
+<div grid="~ cols-2 gap-2" m="-t-2">
+  <img v-click border="rounded" width="260" src="https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/section-illustration.svg">
+  <img v-click border="rounded" width="260" src="https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/section-illustration.svg">
+</div>
 ---
 
 # CLI Options
