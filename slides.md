@@ -11,7 +11,7 @@ drawings:
   persist: false
 ---
 
-# Nodejs Troubleshooting
+# Web Troubleshooting
 
 Tips and Tricks
 
@@ -25,7 +25,7 @@ Tips and Tricks
 - 😀 My name: **Pou Yan**
 - 🧠 I'm a: **Solution Architect**
 - ⛏  My hobby: **Hacking and Writing**
-- 🏢 Working for: **[HelloGold.com](https://hellogold.com)**
+- 🏢 Currently working for: **[HelloGold.com](https://hellogold.com)**
 
 <br>
 <br>
@@ -88,7 +88,7 @@ introImage: https://miro.medium.com/max/1400/1*Rj3iVwEKZMiRhcEsjh45Kg.png
 
 # Use Unit tests
 
-### Tests can't fail if you don't run any
+### Tests can't fail if you don't run any.
 
 ---
 layout: intro
@@ -104,15 +104,17 @@ introImage: https://dev-to-uploads.s3.amazonaws.com/i/96jxo85imhaa25xhi44k.png
 layout: new-section
 sectionImage: 'https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/section-illustration.svg'
 ---
-# Inspect
+# Logs
 
 ---
-layout: intro
-introImage: https://png.pngtree.com/png-clipart/20190516/original/pngtree-log-file-document-icon-png-image_4180597.jpg
----
-# Distributed Logging and Tracing
 
-### As systems grows bigger, the visibility gap grows.
+# console.group
+[console.group() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/console/group)
+
+<div grid="~ cols-2 gap-2" m="-t-2">
+  <img v-click border="rounded" width="500" src="https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/carbon-console-group-1.png">
+  <img v-click border="rounded" width="500" src="https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/carbon-console-group-2.png">
+</div>
 
 ---
 
@@ -120,9 +122,48 @@ introImage: https://png.pngtree.com/png-clipart/20190516/original/pngtree-log-fi
 [console.table() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/console/table)
 
 <div grid="~ cols-2 gap-2" m="-t-2">
-  <img v-click border="rounded" width="260" src="https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/section-illustration.svg">
-  <img v-click border="rounded" width="260" src="https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/section-illustration.svg">
+  <img v-click border="rounded" width="500" src="https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/carbon-console-table-1.png">
+  <img v-click border="rounded" width="500" src="https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/carbon-console-table-2.png">
 </div>
+---
+
+# colorful console
+
+```js
+console.log('%c Oh my heavens! ', 'background: #222; color: #bada55');
+```
+<br>
+
+<div grid="~ cols-2 gap-2" m="-t-2">
+  <img v-click border="rounded" width="500" src="https://i.stack.imgur.com/gvpgF.png">
+  <img v-click border="rounded" width="500" src="https://i.stack.imgur.com/DFJBd.png">
+</div>
+---
+
+```bash
+python -0 assert.py
+```
+
+<div grid="~ cols-2 gap-2" m="-t-2">
+  <img v-click border="rounded" width="500" src="https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/carbon-python-assert.png">
+</div>
+
+## Python’s build-in assert method can raise an AssertionError if its statement is False .
+---
+layout: intro
+introImage: https://png.pngtree.com/png-clipart/20190516/original/pngtree-log-file-document-icon-png-image_4180597.jpg
+---
+
+# Distributed Logging and Tracing
+
+### As systems grows bigger, the visibility gap grows.
+
+---
+layout: new-section
+sectionImage: 'https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/section-illustration.svg'
+---
+# Inspect
+
 ---
 
 # CLI Options
@@ -132,6 +173,7 @@ introImage: https://png.pngtree.com/png-clipart/20190516/original/pngtree-log-fi
 | <code>-\-enable-source-maps</code> | enable source maps                                          |
 | <code>-\-throw-deprecation</code>  | throw on deprecated features                                |
 | <code>-\-inspect</code>            | activate the V8 inspector                                   |
+| <code>-\-inspect-brk</code>        | activate the V8 inspector and break on first statement      |
 | <code>inspect</code>               | starts with CLI client                                      |
 | <code>debug</code>                 | The legacy debugger has been deprecated as of Node.js 7.7.0 |
 
@@ -142,6 +184,11 @@ introImage: https://png.pngtree.com/png-clipart/20190516/original/pngtree-log-fi
 [Full Debugger Specification](https://nodejs.org/api/debugger.html)
 ```bash {none|all}
 node inspect script.js
+```
+
+```bash {none|1|all}
+import pdb; pdb.set_trace()
+python3 -m pdb script.py
 ```
 
 ```yaml {none|1-4|6-7|9-10|12-15|all}
@@ -170,7 +217,7 @@ logos: [
   'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png',
 ]
 ---
-# Browser Inspect
+# Nodejs Browser Inspect
 
 [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
 ```bash {none|all}
@@ -264,3 +311,8 @@ class: text-center
 ---
 
 # Thank You
+
+---
+layout: image-center
+image: 'https://miro.medium.com/max/1500/1*Tnkk12VxGlyvx_7LBbpnOw.jpeg'
+---
