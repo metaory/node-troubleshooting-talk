@@ -140,15 +140,17 @@ console.log('%c Oh my heavens! ', 'background: #222; color: #bada55');
 </div>
 ---
 
+---
+layout: image-center
+image: 'https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/carbon-python-assert.png'
+---
 ```bash
 python -0 assert.py
 ```
+<br>
+<br>
 
-<div grid="~ cols-2 gap-2" m="-t-2">
-  <img v-click border="rounded" width="500" src="https://raw.githubusercontent.com/metaory/node-troubleshooting-talk/master/public/carbon-python-assert.png">
-</div>
-
-## Python’s build-in assert method can raise an AssertionError if its statement is False .
+#### Python’s build-in assert method can raise an AssertionError if its statement is False .
 ---
 layout: intro
 introImage: https://png.pngtree.com/png-clipart/20190516/original/pngtree-log-file-document-icon-png-image_4180597.jpg
